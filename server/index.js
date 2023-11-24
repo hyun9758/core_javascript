@@ -1,7 +1,4 @@
-console.log(process.env.LANG);
-
-
-const sever = require('live-server');
+const server = require('live-server');
 
 const params = {
   host: 'localhost',
@@ -10,4 +7,9 @@ const params = {
   root: './client'
 }
 
-ServiceWorkerRegistration.start(params)
+
+server.start(params)
+
+
+
+// console.log(process.env.LANG);
