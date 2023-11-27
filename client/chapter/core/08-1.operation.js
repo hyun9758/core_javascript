@@ -81,5 +81,5 @@ counter += 1;
 let count = 10;
 let total = (count % 4) * (count /= 2) + count ** 3; // ?
 
-2 * (5) + count **3
-2 * 5 + 1000 = 1010;
+// count /=2 <= 에서 5가 count에 담김
+// 2 * 5 + 125 = 135
