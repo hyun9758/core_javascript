@@ -5,6 +5,7 @@
 /* -------------------------------------------- */
 
 import { getNode } from './getNode.js';
+
 export function addClass(node, className) {
   if (typeof node === 'string') node = getNode(node);
   if (typeof className !== 'string') {
@@ -68,5 +69,5 @@ function setCss(node, prop, value) {
   node.style[prop] = value;
 }
 
-const css = (node, prop, value) =>
+export const css = (node, prop, value) =>
   !value ? getCss(node, prop) : setCss(node, prop, value);
