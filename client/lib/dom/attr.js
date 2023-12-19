@@ -50,7 +50,7 @@ function getAttr(node, prop) {
 
 function setAttr(node, prop, value) {
   if (isString(node)) node = getNode(node);
-  if (isString(prop))
+  if (!isString(prop))
     typeError('setAttr함수의 두 번째 인수는 문자 타입 이어야 합니다.');
 
   if (value === '') {
